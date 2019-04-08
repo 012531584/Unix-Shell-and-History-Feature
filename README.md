@@ -4,3 +4,5 @@ In this project, we will develop a simple UNIX shell by designing a C program to
 
 
 ![image](https://user-images.githubusercontent.com/43554096/55717274-d4728500-59ad-11e9-98f4-b2cb4c43a000.png)
+
+Above figure shows a basic operation of a command-line shell. In the while loop of the main() function, firstly, it prints out the prompt osh; secondly, it empties the buffers related to the stream, which forces standard outputs to be sure the next input you get is what the user pressed then; last but not the least, it outlines the procedures which are going to be executed after input from the user has been read. Note that the main() function will keep running as long as should_run is equal to 1; once the user inputs “exit” at the prompt,  the should_run will become 0 and the program will be terminated.
